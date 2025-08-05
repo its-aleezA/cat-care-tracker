@@ -56,7 +56,7 @@ img {
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: url('assets/room.png');
+    background-image: url('/assets/room.png');
     background-size: cover;
 }
 
@@ -109,14 +109,14 @@ img {
 /* Tamagotchi Buttons */
 .tamagotchi-buttons {
     position: absolute;
-    bottom: 200px; /* Adjust this value as needed */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Fine-tune centering */
+    bottom: 200px; 
+    left: 50%; 
+    transform: translateX(-50%); 
     display: flex;
-    gap: 40px; /* Maintains spacing between buttons */
-    justify-content: center; /* Ensures buttons stay centered */
-    width: auto; /* Remove fixed width */
-    padding: 20px; /* Add some padding if needed */
+    gap: 40px; 
+    justify-content: center; 
+    width: auto; 
+    padding: 20px;
 }
 
 .tamagotchi-button {

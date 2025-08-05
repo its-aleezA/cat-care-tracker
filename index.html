@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Care Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background">
+        <div class="tamagotchi">
+            <!-- Tamagotchi Screen -->
+            <div class="screen">
+                <!-- Room with cat and happiness bar -->
+                <div class="room">
+                    <div class="happiness-container">
+                        <div class="happiness-bar" id="happiness-bar"></div>
+                        <span id="happiness-text">50%</span>
+                    </div>
+                    <!-- <img src="assets/bed.png" class="pixel-furniture" style="bottom: 30px; left: 10px;">
+                    <img src="assets/bowl.png" class="pixel-furniture" style="bottom: 35px; right: 15px;"> -->
+                    <img src="assets/cat.png" alt="Pixel Cat" id="cat" class="cat">
+                </div>
+            </div>
+            
+            <!-- Tamagotchi Buttons -->
+            <div class="tamagotchi-buttons">
+                <button id="feed-btn" class="tamagotchi-button left-button">
+                    <img src="assets/fish.png" alt="Fish">
+                </button>
+                <button id="play-btn" class="tamagotchi-button right-button">
+                    <img src="assets/yarn.png" alt="Yarn">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

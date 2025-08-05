@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    overflow: hidden;
+    background-color: #000;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+/* Background */
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/background.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 55px;
+}
+
+/* Tamagotchi Shell */
+.tamagotchi {
+    position: relative;
+    width: 375px;
+    height: 500px;
+    background-image: url('assets/tamagotchi-shell.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 315px;
+    justify-content: flex-start;
+}
+
+/* Screen */
+.screen {
+    width: 200px;
+    height: 180px;
+    background-color: #a8d8ea;
+    border: 4px solid #1d3f0d;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Room Inside Screen */
+.room {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/room.png');
+    background-size: cover;
+}
+
+/* Cat */
+.cat {
+    position: absolute;
+    width: 60px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Happiness Bar */
+.happiness-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: 15px;
+    background-color: #f0e6ef;
+    border: 2px solid #6b5b95;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.happiness-bar {
+    height: 100%;
+    width: 50%;
+    background-color: #ff9ff3;
+    transition: width 0.5s ease;
+}
+
+#happiness-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8px;
+    color: #6b5b95;
+    text-shadow: 1px 1px 0 white;
+}
+
+/* Furniture */
+.pixel-furniture {
+    position: absolute;
+    width: 30px;
+    pointer-events: none;
+}
+
+/* Tamagotchi Buttons */
+.tamagotchi-buttons {
+    position: absolute;
+    bottom: 200px; /* Adjust this value as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Fine-tune centering */
+    display: flex;
+    gap: 40px; /* Maintains spacing between buttons */
+    justify-content: center; /* Ensures buttons stay centered */
+    width: auto; /* Remove fixed width */
+    padding: 20px; /* Add some padding if needed */
+}
+
+.tamagotchi-button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tamagotchi-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.tamagotchi-button:active {
+    transform: translateY(2px);
+}
+
+/* Animations */
+@keyframes jump {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -15px); }
+}
+
+.jump {
+    animation: jump 0.5s ease;
+}
